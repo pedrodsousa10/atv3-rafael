@@ -79,4 +79,42 @@ Eficiência(p) = Speedup(p) / p
 
 7. Gráfico de Tempo de Execução
 
-![Tempo](imagens/grafico_tempodeexecucao.png)
+![Tempo](imagens/graficotempodexecucao.png)
+
+8. Gráfico de Speedup
+
+![Speedup](imagens/graficospeedup.png)
+
+9. Gráfico de Eficiência
+
+![Eficiência](graficoeficiencia.png)
+
+10. Análise dos Resultados
+
+O speedup obtido foi próximo do ideal para um número menor de processos, especialmente com 2 e 4 processos, onde a eficiência foi alta (próxima de 1).
+
+A aplicação apresentou boa escalabilidade inicial, porém a eficiência começou a cair a partir de 8 processos.
+
+Isso ocorre devido a fatores como:
+
+Overhead de criação e gerenciamento de processos
+Contenção de recursos (CPU e memória)
+Comunicação e sincronização entre processos
+
+O número de processos (12) provavelmente ultrapassa o número de núcleos físicos disponíveis, o que contribui para a queda de eficiência.
+
+Apesar disso, o tempo total continuou diminuindo, indicando ganho de desempenho, porém com menor aproveitamento dos recursos.
+
+11. Conclusão
+
+O paralelismo trouxe ganho significativo de desempenho, reduzindo o tempo de execução de aproximadamente 95 segundos para cerca de 15 segundos.
+
+O melhor equilíbrio entre desempenho e eficiência foi obtido com 4 processos.
+
+O programa apresentou boa escalabilidade inicial, mas com perda de eficiência à medida que o número de processos aumentou.
+
+Melhorias possíveis incluem:
+
+Ajuste do número de processos ao número de núcleos físicos
+Redução de overhead de paralelização
+Otimização do processamento interno dos arquivos
