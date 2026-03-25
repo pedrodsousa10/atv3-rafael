@@ -87,7 +87,7 @@ Eficiência(p) = Speedup(p) / p
 
 9. Gráfico de Eficiência
 
-![Eficiência](graficoeficiencia.png)
+![Eficiência](imagens/graficoeficiencia.png)
 
 10. Análise dos Resultados
 
